@@ -6,98 +6,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style-padrao.css">
     <title>HOME</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-bus-front"></i></li>
-                <li><h1>VAIDEBAU</h1></li>
-                <li>
-                    <p>SUPORTE</p>
-                </li>
-                <li><BUTton>ENTRAR</BUTton></li>
-            </ul>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="home.html">
+                <li><i class="bi bi-bus-front"></i></li></a>
+                <a href="home.html">
+                <li id="nome-empresa">
+                    <h1>VAIDEBAU</h1>
+                </li></a>
+                <a href="carrinho.html">
+                <li id="menu-suporte">
+                    <h1>CARRINHO</h1>
+                </li></a>
+                <a href="login.html">
+                <li id="menu-login"><button>ENTRAR</button></li>
+            </ul></a>
         </nav>
     </header>
-    <section>
-        <i class="bi bi-arrow-left-square-fill"></i>
-        <p>Carrinho</p>
-        <i class="bi bi-cart-dash-fill"></i>
-    </section>
-    <section>
-        <div>
-            
-
+<!-- */Carrinho */ -->
+<div class="retangulo-user">
+    <div class="container">
+        <section>
+          <i class="bi bi-arrow-left-square-fill"></i>
+          <p>Carrinho</p>
+          <i class="bi bi-cart-dash-fill"></i>
+        </section>
+        <section>
+          <div>
             <div>
-                <p>Brasilia >> Goiania</p>
-                <p>data partida - 22/10/2023</p>
-                <i class="bi bi-cart-dash-fill"></i>
-                <p>1</p>
-                <i class="bi bi-cart-plus-fill"></i>
+              <p>Brasilia >> Goiania</p>
+              <p>data partida - 22/10/2023</p>
+              <i class="bi bi-cart-dash-fill"></i>
+              <p>1</p>
+              <i class="bi bi-cart-plus-fill"></i>
             </div>
             <div>
-                <i class="bi bi-trash-fill"></i>
-                <p>R$ 10000,00</p>
+              <i class="bi bi-trash-fill"></i>
+              <p>R$ 10000,00</p>
             </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            
+          </div>
+        </section>
+        <section>
+          <div>
             <div>
-                <p>Goiania >> Brasilia</p>
-                <p>data partida - 31/10/2023</p>
-                <i class="bi bi-cart-dash-fill"></i>
-                <p>1</p>
-                <i class="bi bi-cart-plus-fill"></i>
+              <p>Goiania >> Brasilia</p>
+              <p>data partida - 31/10/2023</p>
+              <i class="bi bi-cart-dash-fill"></i>
+              <p>1</p>
+              <i class="bi bi-cart-plus-fill"></i>
             </div>
             <div>
-                <i class="bi bi-trash-fill"></i>
-                <p>R$ 10000,00</p>
+              <i class="bi bi-trash-fill"></i>
+              <p>R$ 10000,00</p>
             </div>
-        </div>
-    </section>
-    <section>
-        <input type="text" placeholder="Digite seu cupom aqui">
-        <button>APLICAR</button>
-    </section>
-    <section>
-        <div>
+          </div>
+        </section>
+        <section>
+          <input type="text" placeholder="Digite seu cupom aqui">
+          <button>APLICAR</button>
+        </section>
+        <section>
+          <div>
             <p>Total</p>
-            
-        </div>
-        <div>
+          </div>
+          <a href="metodo_pag.html">
+          <div>
             <button>Ir para pagamento</button>
-        </div>
+          </div>
+        </a>
+        </section>
+      </div>
+      
+</div>
+  
+    
+<footer id="footer" class="footer">
+    <ul class="footer-card">
+        <a href="home.html">
+            <li class="footer-item">
+                <h1 class="footer-nome-item">Home</h1>
 
-    </section>
+            </li>
+        </a>
+        <a href="cadastro_user.html">
+            <li class="footer-item">
+                <h1 class="footer-nome-item">Cadastro</h1>
+            </li>
+        </a>
+        <a href="login.html">
+            <li class="footer-item">
+                <h1 class="footer-nome-item">Login</h1>
 
-    </section>
-    <footer>
-        <ul>
-            <li>
-                <h1>Institucional</h1>
-                
             </li>
-            <li>
-                
-                 <h1>Categorias</h1>
-                </a>
+        </a>
+        <a href="carrinho.html">
+            <li class="footer-item">
+                <h1 class="footer-nome-item">Carrinho</h1>
+
             </li>
-            <li>
-                
-                   <h1>Business</h1>
-                </a>
-            </li>
-            <li>
-                <h1>Ajuda</h1>
-                </a>
-            </li>
-        </ul>
-    </footer>
+        </a>
+
+    </ul>
+</footer>
 </main>
 
 </body>

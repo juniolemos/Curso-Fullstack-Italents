@@ -6,76 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style-padrao.css">
     <title>HOME</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-bus-front"></i></li>
-                <li><h1>VAIDEBAU</h1></li>
-                <li>
-                    <p>SUPORTE</p>
-                </li>
-                <li><BUTton>ENTRAR</BUTton></li>
-            </ul>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="home.html">
+                <li><i class="bi bi-bus-front"></i></li></a>
+                <a href="home.html">
+                <li id="nome-empresa">
+                    <h1>VAIDEBAU</h1>
+                </li></a>
+                <a href="carrinho.html">
+                <li id="menu-suporte">
+                    <h1>CARRINHO</h1>
+                </li></a>
+                <a href="login.html">
+                <li id="menu-login"><button>ENTRAR</button></li>
+            </ul></a>
         </nav>
     </header>
-<section>
-    <h1>Cadastro de Usuario</h1>
+    <main>
 
+        <div class="retangulo-user">
+        
 
-    <form action="">
-        <div>
-            <label for="">Nome</label>
-            <input type="text">
+        <form action="" class="retangulo-centro">
+            <div>
+                <div>
+                <ul id="titulo">
+                    <li>Cadastro de Usuário</li>
+                </ul>
+            </div>
+                <ul>
+                    <li>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="confirmaSenha">Confirme sua senha</label>
+                        <input type="password" id="confirmaSenha" name="confirmaSenha">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="imagem">Imagem</label>
+                        <input type="text" id="imagem" name="imagem">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <button type="submit">Criar Conta</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        
+    </div>
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+            <a href="home.html">
+                <li class="footer-item">
+                    <h1 class="footer-nome-item">Home</h1>
 
-            <label for="">Email</label>
-            <input type="email">
-
-            <label for="">Senha</label>
-            <input type="password">
-
-            <label for="">Senha</label>
-            <input type="Confirme sua Senha">
-
-            <label for="">Imagem</label>
-            <input type="text">
-
-            <label for="">Endereço</label>
-            <input type="text">
-
-          
-
-            <Button>Criar Conta</Button>
-        </div>
-    </form>
-</section>
-
-<footer>
-    <ul>
-        <li>
-            <h1>Institucional</h1>
-            
-        </li>
-        <li>
-            
-             <h1>Categorias</h1>
+                </li>
             </a>
-        </li>
-        <li>
-            
-               <h1>Business</h1>
+            <a href="cadastro_user.html">
+                <li class="footer-item">
+                    <h1 class="footer-nome-item">Cadastro</h1>
+                </li>
             </a>
-        </li>
-        <li>
-            <h1>Ajuda</h1>
+            <a href="login.html">
+                <li class="footer-item">
+                    <h1 class="footer-nome-item">Login</h1>
+
+                </li>
             </a>
-        </li>
-    </ul>
-</footer>
+            <a href="carrinho.html">
+                <li class="footer-item">
+                    <h1 class="footer-nome-item">Carrinho</h1>
+
+                </li>
+            </a>
+
+        </ul>
+    </footer>
 </main>
+
+</body>
+
+</html>
 
 </body>
 

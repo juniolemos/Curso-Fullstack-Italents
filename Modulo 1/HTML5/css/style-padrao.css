@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Mukta', Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #504F4F;
+  /* unidade vh é altura viewport, permitindo que o body 
+    defina uma valor minimo idenpendete da tela do usuario */
+
+}
+
+:root {
+  --background-clean: beige;
+  --cor-da-empresa: #17241d;
+
+
+}
+
+/* Estilização do HEADER - NAV*/
+.cabecalho {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: #17241d;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu .ul-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.ul-menu li {
+  list-style: none;
+  padding: 2rem;
+  color: antiquewhite;
+}
+
+.nome-empresa {
+  font-size: 50px;
+  color: var(--background-clean);
+
+}
+
+.menu-suporte {
+  font-size: 50px;
+  color: var(--background-clean);
+
+}
+
+#menu-login {
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+
+
+}
+
+.bi-bus-front {
+  font-size: 50px;
+  color: var(--background-clean);
+}
+
+.suporte {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  color: antiquewhite;
+  font-size: 60px;
+}
+
+
+.retangulo {
+
+  position: auto;
+  width: 100%;
+  height: 600px;
+  left: calc(50% - 1440px/2 + 2px);
+  top: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url(https://img.freepik.com/fotos-gratis/onibus-publico-sem-pessoas-durante-a-epidemia-mundial-covid19_637285-4833.jpg?w=1380&t=st=1683755121~exp=1683755721~hmac=9543662d33c8e4fd9a42e7fe517c07a3edcc341d02c00e6ce9f0ee726aee4032);
+
+}
+
+.busca {
+  position: absolute;
+  width: 700px;
+  height: 287px;
+  left: 700px;
+  top: 200px;
+
+  background: #37473F;
+  border-radius: 16px;
+
+}
+
+.busca-msg {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  left: 200px;
+  top: 4px;
+
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+
+
+
+  color: #FFFFFF;
+}
+
+
+.bi-bus-front-fill {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  left: 40px;
+  top: 4px;
+
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+
+
+
+  color: #FFFFFF
+}
+input::placeholder {
+  font-weight: bold;
+  
+  opacity: 0.5;
+  color: rgb(15, 15, 15);
+  text-align: center;
+}
+
+#input-partida {
+
+  position: relative;
+  width: 600px;
+  height: 30px;
+  left: 50px;
+  top: 6px;
+  margin-top: 6px;
+
+  
+  font-style: normal rgb(26, 25, 25);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+
+
+
+  color: #161616
+}
+.bi-geo-alt-fill {
+  position: absolute;
+  width: 500px;
+  height: 30px;
+  left: 40px;
+  top: 90px;
+
+  
+  font-style: normal rgb(70, 68, 68);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 30px;
+
+
+
+  color: #dbd5d5
+}
+#input-saida {
+
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 75px;
+  top: 85px;
+  margin-top: 6px;
+
+  
+  font-style: normal rgb(70, 68, 68);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+
+
+
+  color: #070707
+}
+.ida{
+  position: relative;
+  width: 300px;
+  height: 30px;
+  left: 180px;
+  top: 55px;
+
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: left;
+
+
+
+  color: #FFFFFF;
+}
+#input-data-ida {
+
+  position: absolute;
+  width: 40%;
+  height: 30px;
+  left: 75px;
+  top: 150px;
+  margin-top: 6px;
+
+  
+  font-style: normal rgb(70, 68, 68);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  
+  
+
+
+
+  color: #1b1a1a
+}
+
+.volta{
+  position: relative;
+  width: 300px;
+  height: 30px;
+  left: 500px;
+  top: 30px;
+
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: left;
+
+
+
+  color: #FFFFFF;
+}
+#input-data-volta {
+
+  position: absolute;
+  width: 40%;
+  height: 30px;
+  left: 392px;
+  top: 150px;
+  margin-top: 6px;
+  
+
+  
+  font-style: normal rgb(70, 68, 68);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  
+
+
+
+  color: #1b1a1a
+
+}
+#botao{
+  width: 90%;
+  position: absolute;
+  width: 600px;
+  height: 30px;
+  left: 75px;
+  top: 200px;
+  margin-top: 6px;
+
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  background-color: #17241d;
+
+
+
+  color: #777c7a
+}
+
+
+/*CSS Cadastro de usuario*/
+.retangulo-user {
+  position: auto;
+  width: 100%;
+  height: 600px;
+  left: calc(50% - 1440px/2 + 2px);
+  top: 200px;
+  color: rgba(78, 78, 73, 0.904)
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/fotos-gratis/onibus-publico-sem-pessoas-durante-a-epidemia-mundial-covid19_637285-4833.jpg?w=1380&t=st=1683755121~exp=1683755721~hmac=9543662d33c8e4fd9a42e7fe517c07a3edcc341d02c00e6ce9f0ee726aee4032);
+}
+
+form.retangulo-centro {
+  background-color: var(--cor-da-empresa);
+  padding: 2px;
+  border-radius: 10px;
+  width:35%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  top: 100px;
+  color: rgba(245, 245, 220, 0.904)
+}
+
+form.retangulo-centro ul {
+  list-style: none;
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+form.retangulo-centro ul#titulo {
+  text-align: right var(--background-clean);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+form.retangulo-centro label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: bold;
+  color: rgba(245, 245, 220, 0.904);
+  width: 80%;
+}
+
+form.retangulo-centro input[type="text"],
+form.retangulo-centro input[type="email"],
+form.retangulo-centro input[type="password"] {
+  width: 300%;
+  padding: 0.5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1px;
+  text-align: center;
+  color: var(--background-clean);
+  display: flex;
+  flex-direction: row;
+}
+
+form.retangulo-centro button {
+  background-color: var(--background-clean);
+  color: var(--cor-da-empresa);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form.retangulo-centro button:hover {
+  background-color: #0062cc;
+}
+
+.nome {
+  text-align: center;
+}
+
+
+
+
+/* Css carrinho */ 
+
+
+.container {
+  border: 2px solid black;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: var(--cor-da-empresa);
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+section i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+section p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+section div p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+section div i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+section div input[type="text"],
+section div button {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+section div input[type="text"]:focus,
+section div button:focus {
+  outline: none;
+}
+
+section div input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+section div button:hover {
+  background-color: #ddd;
+}
+
+section div button:active {
+  background-color: #ccc;
+}
+
+
+/* CSS login */
+.retangulo-user-login{
+  position: auto;
+  width: 100%;
+  height: 800px;
+  left: calc(50% - 1440px/2 + 2px);
+  top: 200px;
+  color: rgba(78, 78, 73, 0.904)
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/fotos-gratis/onibus-publico-sem-pessoas-durante-a-epidemia-mundial-covid19_637285-4833.jpg?w=1380&t=st=1683755121~exp=1683755721~hmac=9543662d33c8e4fd9a42e7fe517c07a3edcc341d02c00e6ce9f0ee726aee4032);
+}
+.retangulo-centro {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  
+  margin-left: 800px;
+  margin-top:100px;
+}
+
+.retangulo-centro div {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: row;
+  align-items: center;
+  background-color: var(--cor-da-empresa);
+  align-items: center;
+}
+
+.retangulo-centro label {
+  margin-bottom: 10px;
+}
+
+.retangulo-centro input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.retangulo-centro button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: var(--cor-da-empresa);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.retangulo-centro button:hover {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+/* Estilização Footer*/
+#rodape{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: #17241d;
+
+}
+
+.footer {
+  background-color: var(--cor-da-empresa);
+  margin-top: 5rem;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+
+}
+
+.footer-card a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--background-clean)
+
+}
+
+.footer-card li {
+  list-style: none;
+}
+
+.footer-item {
+  margin: .5rem;
+  display: flex;
+
+}

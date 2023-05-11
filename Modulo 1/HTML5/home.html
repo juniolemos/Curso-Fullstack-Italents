@@ -6,58 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style-padrao.css">
     <title>HOME</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-bus-front"></i></li>
-                <li><h1>VAIDEBAU</h1></li>
-                <li>
-                    <p>SUPORTE</p>
-                </li>
-                <li><BUTton>ENTRAR</BUTton></li>
-            </ul>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="home.html">
+                <li><i class="bi bi-bus-front"></i></li></a>
+                <a href="home.html">
+                <li id="nome-empresa">
+                    <h1>VAIDEBAU</h1>
+                </li></a>
+                <a href="carrinho.html">
+                <li id="menu-suporte">
+                    <h1>CARRINHO</h1>
+                </li></a>
+                <a href="login.html">
+                <li id="menu-login"><button>ENTRAR</button></li>
+            </ul></a>
         </nav>
     </header>
     <main>
-        
-        <section>
-            <P>INFORME SEU DESTINO <i class="bi bi-geo-alt-fill"></i></P>
-            <i class="bi bi-bus-front-fill"></i>
-            <input type="text" placeholder="Informe o local de saida">
-            <i class="bi bi-geo-alt-fill"></i>
-            <input type="text" placeholder="Informe o local de chegada">
-            <input type="date" placeholder="Data ida">
-            <input type="date" placeholder="Data volta">
-            <button>BUSCAR</button>
-        </section>
-        <section>
+        <div class="retangulo">
             
+                <div class="busca">
+                    <P class="busca-msg">INFORME SEU DESTINO </P>
+                    <i class="bi bi-bus-front-fill"></i>
+                    <input id="input-partida" type="text" placeholder="Informe o local de saida">
+                    <i class="bi bi-geo-alt-fill"></i> 
+                    <input id="input-saida" type="text" placeholder="Informe o local de chegada">
+                    <p class="ida">Data da partida</p>
+                    <input id="input-data-ida" type="date" placeholder="Data ida">
+                    <p class="volta">Data da volta</p>
+                    <input id="input-data-volta" type="date" placeholder="Data volta"> 
+                    <button id="botao">BUSCAR</button>
+                </div>
+            
+        </div>
+        <section>
+
         </section>
-       
-        <footer>
-            <ul>
-                <li>
-                    <h1>Institucional</h1>
-                    
-                </li>
-                <li>
-                    
-                     <h1>Categorias</h1>
-                    </a>
-                </li>
-                <li>
-                    
-                       <h1>Business</h1>
-                    </a>
-                </li>
-                <li>
-                    <h1>Ajuda</h1>
-                    </a>
-                </li>
+
+        <footer id="footer" class="footer">
+            <ul class="footer-card">
+                <a href="home.html">
+                    <li class="footer-item">
+                        <h1 class="footer-nome-item">Home</h1>
+
+                    </li>
+                </a>
+                <a href="cadastro_user.html">
+                    <li class="footer-item">
+                        <h1 class="footer-nome-item">Cadastro</h1>
+                    </li>
+                </a>
+                <a href="login.html">
+                    <li class="footer-item">
+                        <h1 class="footer-nome-item">Login</h1>
+
+                    </li>
+                </a>
+                <a href="carrinho.html">
+                    <li class="footer-item">
+                        <h1 class="footer-nome-item">Carrinho</h1>
+
+                    </li>
+                </a>
+
             </ul>
         </footer>
     </main>
