@@ -8,7 +8,10 @@
 
 body {
   min-height: 100vh;
-  background-color: #504F4F;
+  background-image: url(https://img.freepik.com/fotos-gratis/onibus-publico-sem-pessoas-durante-a-epidemia-mundial-covid19_637285-4833.jpg?w=1380&t=st=1683755121~exp=1683755721~hmac=9543662d33c8e4fd9a42e7fe517c07a3edcc341d02c00e6ce9f0ee726aee4032);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   /* unidade vh é altura viewport, permitindo que o body 
     defina uma valor minimo idenpendete da tela do usuario */
 
@@ -89,15 +92,18 @@ body {
 
 .retangulo {
 
-  position: auto;
-  width: 100%;
-  height: 600px;
-  left: calc(50% - 1440px/2 + 2px);
-  top: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-image: url(https://img.freepik.com/fotos-gratis/onibus-publico-sem-pessoas-durante-a-epidemia-mundial-covid19_637285-4833.jpg?w=1380&t=st=1683755121~exp=1683755721~hmac=9543662d33c8e4fd9a42e7fe517c07a3edcc341d02c00e6ce9f0ee726aee4032);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 750px;
+  height: 400px;
+  display: grid;
+  justify-content: center;
+  background-color: var(--cor-da-empresa);
+  margin-left:700px;
+  margin-top: 1rem;
+  align-items: center;
+  align-self: auto;
+ 
 
 }
 
@@ -108,7 +114,7 @@ body {
   left: 700px;
   top: 200px;
 
-  background: #37473F;
+  
   border-radius: 16px;
 
 }
@@ -326,7 +332,7 @@ input::placeholder {
   color: rgba(78, 78, 73, 0.904)
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://img.freepik.com/fotos-gratis/onibus-publico-sem-pessoas-durante-a-epidemia-mundial-covid19_637285-4833.jpg?w=1380&t=st=1683755121~exp=1683755721~hmac=9543662d33c8e4fd9a42e7fe517c07a3edcc341d02c00e6ce9f0ee726aee4032);
+ 
 }
 
 form.retangulo-centro {
@@ -407,7 +413,7 @@ form.retangulo-centro button:hover {
 
 /* Css carrinho */ 
 
-
+/*------------------------------------------------------------------------*/
 .container {
   border: 2px solid black;
   padding: 20px;
@@ -420,7 +426,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 section i {
@@ -428,6 +434,10 @@ section i {
   margin-right: 1rem;
 }
 
+.desc-ida{
+  font-size: 1.5rem;
+  display: flex;
+}
 section p {
   font-size: 1.5rem;
   font-weight: bold;
@@ -444,6 +454,7 @@ section div {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 section div p {
   font-size: 1.2rem;
@@ -481,65 +492,84 @@ section div button:hover {
 section div button:active {
   background-color: #ccc;
 }
+/* CSS login------------------------------------------------------------ */
 
-
-/* CSS login */
-.retangulo-user-login{
-  position: auto;
-  width: 100%;
-  height: 800px;
-  left: calc(50% - 1440px/2 + 2px);
-  top: 200px;
-  color: rgba(78, 78, 73, 0.904)
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://img.freepik.com/fotos-gratis/onibus-publico-sem-pessoas-durante-a-epidemia-mundial-covid19_637285-4833.jpg?w=1380&t=st=1683755121~exp=1683755721~hmac=9543662d33c8e4fd9a42e7fe517c07a3edcc341d02c00e6ce9f0ee726aee4032);
-}
 .retangulo-centro {
   border: 2px solid black;
-  border-radius: 5px;
-  width: 500px;
-  height: 300px;
-  display: flex;
+  border-radius: 10px;
+  width: 750px;
+  height: 400px;
+  display: grid;
   justify-content: center;
-  
+  background-color: var(--cor-da-empresa);
   margin-left: 800px;
-  margin-top:100px;
+  margin-top: 6rem;
+  align-items: center;
+  align-self: auto;
+  
+}
+#cad-botao{
+  width: 400px;
+  border: solid var(--background-clean);
+  border-radius: 5px;
+  margin-top: 6rem;
+  color: var(--background-clean);
+  margin-left: 100px;
+  margin-bottom: 5px;
+   
+  
+  background-color: var(--cor-da-empresa);
+  
+}
+.login-user{
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  background-color: var(--cor-da-empresa);
+  color: var(--background-clean);
+  display: flexbox;
+  margin-right: 2 rem;
+  border: none;
+  width: 600px;
 }
 
-.retangulo-centro div {
+#login{
+  margin-right: 1rem;
+  display: flexbox;
+  margin-left: 2px;
+}
+#senha{
+  margin-right: 1rem;
+  display: flexbox;
+  margin-left: 2px;
+}
+#campo-login{
+  width: 400px;
+}
+#campo-senha{
+  width: 400px;
+}
+.login-senha{
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-left: 4px;
+  background-color: var(--cor-da-empresa);
+  color: var(--background-clean);
+  display: flexbox;
+  width: 600px;
+  border: none;
+}
+
+
+/* .retangulo-centro div {
   display: flex;
   flex-direction: column-reverse;
   justify-content: row;
   align-items: center;
   background-color: var(--cor-da-empresa);
   align-items: center;
-}
-
-.retangulo-centro label {
-  margin-bottom: 10px;
-}
-
-.retangulo-centro input {
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.retangulo-centro button {
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  background-color: var(--cor-da-empresa);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.retangulo-centro button:hover {
-  background-color: white;
-  color: black;
-  transition: background-color 0.3s ease;
-}
+} */
 
 
 

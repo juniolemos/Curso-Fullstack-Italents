@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="css/style-padrao.css">
-    <title>HOME</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="./api/completa-cidade.js"></script>
+
+
+
+
 </head>
 
 <body>
@@ -36,37 +43,37 @@
     <!-- */Carrinho */ -->
     <div class="retangulo-user">
         <div class="container">
-            <section>
-                <i class="bi bi-arrow-left-square-fill"></i>
-                <p>Carrinho</p>
-                <i class="bi bi-cart-dash-fill"></i>
+            <section class="car-voltar">
+                <i class="bi bi-arrow-left-square-fill" id="voltar"></i>
+                <p id="titulo-car">Carrinho</p>
+                <i class="bi bi-cart-dash-fill" id="excluir-cart"></i>
             </section>
             <section id="p-ida">
                 <div class="quantidade">
                     <p>Brasilia >> Goiania</p>
                     <p>data partida - 22/10/2023</p>
-                    <i class="bi bi-cart-dash-fill"></i>
+                    <i class="bi bi-cart-dash-fill" id="diminuir"></i>
                     <p id="numero-produto">1</p>
-                    <i class="bi bi-cart-plus-fill"></i>
+                    <i class="bi bi-cart-plus-fill" id="somar"></i>
                 </div>
                 <div>
                     <i class="bi bi-trash-fill"></i>
-                    <p>R$ 10000,00</p>
+                    <p id="valor-produto">350,00</p>
                 </div>
 
             </section>
             <section>
 
                 <div class="nome-quantidade">
-                    <p>Goiania >> Brasilia</p>
+                    <p id="desc-ida">Goiania >> Brasilia</p>
                     <p>data partida - 31/10/2023</p>
-                    <i class="bi bi-cart-dash-fill"></i>
-                    <p id="numero-produto">1</p>
-                    <i class="bi bi-cart-plus-fill"></i>
+                    <i class="bi bi-cart-dash-fill" id="diminuir2"></i>
+                    <p id="numero-produto2">1</p>
+                    <i class="bi bi-cart-plus-fill" id="somar2"></i>
                 </div>
                 <div>
                     <i class="bi bi-trash-fill"></i>
-                    <p>R$ 10000</p>
+                    <p id="valor-produto2">350,00</p>
                 </div>
 
             </section>
@@ -77,6 +84,7 @@
             <section>
                 <div>
                     <p>Total</p>
+                    <p id="total"></p>
                 </div>
                 <a href="metodo_pag.html">
                     <div>
