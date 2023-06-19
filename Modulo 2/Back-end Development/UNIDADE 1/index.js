@@ -1,24 +1,24 @@
 class Pessoa{
-    constructor(nome, sobrenome,idade, altura, genero,  raca){
+    constructor(nome, sobrenome,datanascimento, altura, genero,  raca){
             this.nome = nome,
             this.sobrenome = sobrenome
-            this.idade = idade,
+            this.datanascimento = datanascimento,
             this.altura = altura,
             this.genero = genero,
             this.raca = raca
     }
 
-    nomeIdade = function () {
-        return this.nome + " " + this.idade + " " + this.genero + " ";
+    nomedatanascimento = function () {
+        return this.nome + " " + this.datanascimento + " " + this.genero + " ";
     }
 }
 
 class Usuario extends Pessoa{
-    constructor (nome, sobrenome, idade, altura, genero,  raca, profissao, email, cpf, endereco){
+    constructor (nome, sobrenome, datanascimento, altura, genero,  raca, profissao, email, cpf, endereco, senha){
         super(
             nome,
             sobrenome,
-            idade,
+            datanascimento,
             altura,
             genero,
             raca,
@@ -28,16 +28,17 @@ class Usuario extends Pessoa{
         this.profissao = profissao,
         this.email = email,
         this.cpf = cpf,
-        this.endereco = endereco
+        this.endereco = endereco,
+        this.senha = senha
         
     }    
     infos = function(){
-        return this.nome + " " + this.cpf + " " + this.endereco + " ";
+        return this.nome + " " + this.cpf + " " + this.endereco + " " + this.senha + " ";
     }
 }
 
-const user = new Usuario("junio", "Morais Lemos", 37, 1.77, "M", "Branca", "DevOps", "junio.lemos@hotmail.com", "002585698-01", "QNL 15 Bloco H, 15" );
+const user = new Usuario("junio", "Morais Lemos", "21-12-1985", 1.77, "M", "Branca", "DevOps", "junio.lemos@hotmail.com", "002585698-01", "QNL 15 Bloco H, 15", "2030#$" );
 
-console.log(user.nomeIdade());
+console.log(user.nomedatanascimento());
 console.log(user.infos());
 console.log(user);
