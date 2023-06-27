@@ -19,6 +19,8 @@ app.get("/", (req,res) => {
 
 });
 
+app.use('/usuario', usuario);
+
 app.post("/login", async (req,res)=> {
     try{
         const {email,senha} =req.body;

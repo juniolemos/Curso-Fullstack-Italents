@@ -37,7 +37,7 @@ const findAllUsuarios =  async (req,res) => {
 }
 
 
-const createUsuario = async (req,res)  => {
+const createUsuarios = async (req,res)  => {
     const usuario = req.body;
 
     if(Object.keys(usuario).length === 0){
@@ -46,11 +46,11 @@ const createUsuario = async (req,res)  => {
     }
     
     
-    if(!usuario.nome){
-        return res.status(400).send({message: "O campo 'nome' nao foi encontrado"})
+    if(!usuario.email){
+        return res.status(400).send({message: "O campo 'email' nao foi encontrado"})
     }
-    if(!usuario.numFuncionarios){
-        return res.status(400).send({message: "O campo 'numFuncionarios' nao foi encontrado"})
+    if(!usuario.senha){
+        return res.status(400).send({message: "O campo 'senha' nao foi encontrado"})
     }
 
 
@@ -59,7 +59,7 @@ const createUsuario = async (req,res)  => {
     return res.status(201).send(await usuarioService.createUsuario(usuario));
 }
 ////////////////////////////////////////////////////////////////////////////////////////////
-const updateUsuario = async (req,res) => {
+const updateUsuarios = async (req,res) => {
     const id = req.params.id;
     const usuario = req.body;
     //let found = false;
@@ -70,11 +70,11 @@ const updateUsuario = async (req,res) => {
     }
     
   
-    if(!usuario.nome){
-        return res.status(400).send({message: "O campo 'nome' nao foi encontrado"})
+    if(!usuario.email){
+        return res.status(400).send({message: "O campo 'email' nao foi encontrado"})
     }
-    if(!usuario.numFuncionarios){
-        return res.status(400).send({message: "O campo 'numFuncionarios' nao foi encontrado"})
+    if(!usuario.senha){
+        return res.status(400).send({message: "O campo 'senha' nao foi encontrado"})
     }
 
     return res.status(200).send(await usuarioService.updateUsuario(id,usuario ))
@@ -102,7 +102,7 @@ const deleteUsuario = async (req,res) => {
 module.exports = {
     findUsuario,
     findAllUsuarios,
-    createUsuario,
-    updateUsuario,
+    createUsuarios,
+    updateUsuarios,
     deleteUsuario
 }
